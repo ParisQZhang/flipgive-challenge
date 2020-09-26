@@ -1,8 +1,4 @@
-import React from 'react';
-import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-import List from './containers/list/list';
-import LoadingSpinner from './components/loading-spinner';
 
 const GET_ADOBE = gql`
   {
@@ -38,9 +34,5 @@ const GET_ADOBE = gql`
   }
 `;
 
-export default function AdobeProfile() {
-  const { loading, error, data } = useQuery(GET_ADOBE);
-  if (error) return <h1>error</h1>;
-  if (loading || !data) return <LoadingSpinner />;
-  return <List repositories={data.organization.repositories.edges}></List>;
-}
+export default GET_ADOBE;
+

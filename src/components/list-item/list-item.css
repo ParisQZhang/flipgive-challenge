@@ -38,6 +38,7 @@ a:hover {
 .issue {
   font-size: 13px;
   display: block;
+  color: grey;
 }
 
 .languages {
