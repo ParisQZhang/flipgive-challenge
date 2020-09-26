@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import GET_ADOBE from './adobeprofile';
 import List from './containers/list/list';
-import LoadingSpinner from './components/loading-spinner';
+import LoadingSpinner from './components/loading-spinner/loading-spinner';
 import { useQuery } from '@apollo/react-hooks';
 
 function App() {
