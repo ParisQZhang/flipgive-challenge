@@ -1,8 +1,8 @@
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-import List from './list';
-import LoadingSpinner from './loading-spinner';
+import List from './containers/list/list';
+import LoadingSpinner from './components/loading-spinner';
 
 const GET_ADOBE = gql`
   {

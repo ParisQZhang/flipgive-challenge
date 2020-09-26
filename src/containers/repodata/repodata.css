@@ -1,0 +1,21 @@
+.heading {
+  padding-bottom: 5%;
+}
+
+.title {
+  font-size: 80px;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  margin-right: 30%;
+}
+
+.intro {
+  font-size: 30px;
+  margin-top: 1%;
+  margin-right: 25%;
+  color: #48b1bf;
+}
+
+.listing {
+  background-color: #b6f8f8;
+}

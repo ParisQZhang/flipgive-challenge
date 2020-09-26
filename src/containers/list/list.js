@@ -1,14 +1,12 @@
 import React from 'react';
+import ListItem from '../../components/list-item/list-item'
 
 export default function List({ repositories }) {
   return (
     <div className="repository-list" id="list">
-      {console.log(repositories)}
       {repositories.map((repository) => {
         return (
-          <div>
-            <a href={repository.node.url}>{repository.node.name}</a>
-          </div>
+          <ListItem key={repository.node.id} repository={repository}></ListItem>
         );
       })}
     </div>

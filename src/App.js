@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Repodata from './repodata';
+import Repodata from './containers/repodata/repodata';
 
 function App() {
   return (
