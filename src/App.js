@@ -5,6 +5,7 @@ import List from './containers/list/list';
 import LoadingSpinner from './components/loading-spinner/loading-spinner';
 import { useQuery } from '@apollo/react-hooks';
 import Tags from './components/tags/tags';
+import SearchBar from './components/search-bar/search-bar';
 
 function App() {
   const [repoData, setRepoData] = useState([])
@@ -31,6 +32,12 @@ function App() {
     }
   }
 
+  const filterByName=(str)=>{
+    setRepoData(edges.filter((edge)=>{
+      return edge.node.name.includes(str.toLowerCase())
+    }));
+  }
+  
   return (
     <div className="App">
       <div className='heading'>
@@ -41,6 +48,8 @@ function App() {
       <div className='tags'>
         <Tags repositories={edges} clickEvent={filterRepoByLanguage}></Tags>
       </div>
+
+      <SearchBar handleChange={filterByName}></SearchBar>
 
       <div className='listing'>
         <List repositories={repoData} data={edges}></List>
