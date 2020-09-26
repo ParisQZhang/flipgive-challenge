@@ -2,11 +2,11 @@ import React from 'react';
 import './list-item.css';
 
 export default function ListItem({ repository }) {
-  const backgroundColor=['#FCDABE', '#F2C7CC', '#C0C2E2', '#C2E7F1', '#D7F2CE', '#F3FBD2']
+  const backgroundColor=['#08FFD0', '#A734E8', '#FFEF00', '#7FF981', '#FF0044']
   const randomColor = backgroundColor[Math.floor(Math.random()*backgroundColor.length)];
 
   return (
-    <div className="listItem" style={{'border':'6px solid'+randomColor}}>
+    <div className="listItem" style={{'border':'3px solid'+randomColor}}>
 
         <a className='name' href={repository.node.url}>{repository.node.name}</a>
         

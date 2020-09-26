@@ -5,9 +5,9 @@
 .name {
   font-size: 25px;
   font-weight: bold;
-  background: linear-gradient(to right, #65799b 0%, #5e2563 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(to right, #65799b 0%, #5e2563 100%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 
 a {
@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  color: pink;
+  color: #e3299d;
 }
 
 .listItem {
@@ -23,12 +23,15 @@ a:hover {
   border-radius: 20px;
   flex-direction: column;
   padding: 20px;
-  min-height: 320px;
+  min-height: 300px;
   margin: 10px;
   flex-grow: 0;
   justify-content: center;
-  flex-basis: 280px;
+  flex-basis: 260px;
   flex-shrink: 0;
+  -webkit-box-shadow: 6px 8px 26px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 8px 26px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 8px 26px -13px rgba(0, 0, 0, 0.75);
 }
 
 .issues {

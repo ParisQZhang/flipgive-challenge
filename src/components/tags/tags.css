@@ -1,12 +1,13 @@
 .tag {
   padding: 5px;
-  border: 1px solid #e329f9;
+  border: 1px solid #e3299d;
   border-radius: 5px;
   background-color: white;
   margin: 5px;
+  font-size: 15px;
 }
 
 .tag:hover {
-  background-color: #e329f9;
+  background-color: #e3299d;
   color: white;
 }

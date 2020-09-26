@@ -1,7 +1,12 @@
 .sr-only {
   font-size: 50px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .spinner-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
