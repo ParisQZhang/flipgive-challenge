@@ -2,10 +2,9 @@ import React from 'react';
 import ListItem from '../../components/list-item/list-item';
 import './list.css'
 
-export default function List({ repositories, data }) {
+export default function List({ repositories, initalData }) {
 
-  // if(repositories.length===0) repositories=data;
-  if(!repositories) repositories=data;
+  if(!repositories) repositories=initalData;
   
   return (
     <div className="repository-list">

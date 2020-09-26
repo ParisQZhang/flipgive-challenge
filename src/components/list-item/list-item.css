@@ -5,9 +5,6 @@
 .name {
   font-size: 25px;
   font-weight: bold;
-  /* background: linear-gradient(to right, #65799b 0%, #5e2563 100%); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
 }
 
 a {

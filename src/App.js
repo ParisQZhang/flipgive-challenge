@@ -21,15 +21,15 @@ function App() {
     }
   } = data
 
-  const filterRepoByLanguage=(lan)=>{
-    if(lan==='All') setRepoData(edges)
+  const filterRepoByLanguage=(language)=>{
+    if(language==='All') setRepoData(edges)
     else {
       let languageEdges=edges.map(repo=>repo.node.languages.edges);
       let languageArr = languageEdges.map((edge, index) => {
-        return edge={id:index, languages: edge.map((el)=>el.node.name)}
+        return edge={idx:index, languages: edge.map((el)=>el.node.name)}
       });
-      const filteredLanArr=languageArr.filter((lanArr)=>lanArr.languages.includes(lan));
-      setRepoData(filteredLanArr.map((edge) => edges[edge.id]))
+      const filteredLanArr=languageArr.filter((lanArr)=>lanArr.languages.includes(language));
+      setRepoData(filteredLanArr.map((edge) => edges[edge.idx]))
     }
   }
 
@@ -49,7 +49,7 @@ function App() {
       </div>
 
       <div className='listing'>
-        <List repositories={repoData} data={edges}></List>
+        <List repositories={repoData} initalData={edges}></List>
       </div>
       <Footer />
     </div>
