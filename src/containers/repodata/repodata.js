@@ -30,7 +30,7 @@ const Repodata = () => {
     <ApolloProvider client={client}>
       <div className='heading'>
         <h1 className='title'>Adobe</h1>
-        <h2 className='intro'>Open Source Projects</h2>
+        <h2 className='intro'>A Collection of the Open Source Projects</h2>
       </div>
       <div className='listing'>
         <AdobeProfile />

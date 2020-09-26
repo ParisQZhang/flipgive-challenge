@@ -1,0 +1,61 @@
+.listItem * {
+  color: black;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+  background: linear-gradient(to right, #65799b 0%, #5e2563 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+}
+
+.listItem {
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 320px;
+  margin: 10px;
+  flex-grow: 0;
+  justify-content: center;
+  flex-basis: 280px;
+  flex-shrink: 0;
+}
+
+.issues {
+  margin: 10px;
+}
+
+.issue {
+  font-size: 13px;
+  display: block;
+}
+
+.languages {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.language {
+  margin: 0px;
+  display: block;
+}
+
+.language-color {
+  position: relative;
+  top: 1px;
+  right: 8px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}

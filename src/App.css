@@ -1,4 +1,7 @@
 .App {
+  box-sizing: border-box;
   font-family: 'Open Sans';
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
