@@ -39,16 +39,23 @@ describe('Components rendering', ()=>{
     expect(linkElement).toBeInTheDocument();
   })
 
-  test('renders 7 language tags after loading', async ()=>{
+  test('renders 7 language tags', async ()=>{
     const {getAllByRole} = render(<ApolloProvider client={client}><App /></ApolloProvider>);
     const buttons = await waitForElement(()=>getAllByRole('button'))
     expect(buttons).toHaveLength(7);
   })
 
-  test('renders search bar after loading', async ()=>{
+  test('renders search bar', async ()=>{
     const {getByRole} = render(<ApolloProvider client={client}><App /></ApolloProvider>);
     const input = await waitForElement(()=>getByRole('textbox'))
     expect(input).toBeInTheDocument();
   })
+  
+  test('renders 10 list item names and 4 issues', async ()=>{
+    const {getAllByRole} = render(<ApolloProvider client={client}><App /></ApolloProvider>);
+    const link = await waitForElement(()=>getAllByRole('link'))
+    expect(link).toHaveLength(14);
+  })
+
 
 });
